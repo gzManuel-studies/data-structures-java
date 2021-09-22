@@ -3,18 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        LinkedList linkedListInts = new LinkedList();
-        linkedListInts.addFirst(10);
-        linkedListInts.addFirst(15);
-        linkedListInts.addFirst(30);
-        linkedListInts.addLast(40);
-//        linkedListInts.print();
+        Queue<String> myQueue = new Queue<>();
 
-        linkedListInts.addLast(23);
-        linkedListInts.addFirst(100);
-        linkedListInts.removeLast();
-        linkedListInts.print();
-
+        myQueue.enQueue("Manuel");
+        myQueue.enQueue("Claudia");
+        myQueue.enQueue("Alejandra");
+        myQueue.deQueue();
+        myQueue.deQueue();
+        myQueue.print();
     }
 }

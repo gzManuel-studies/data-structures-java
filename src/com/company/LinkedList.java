@@ -32,6 +32,10 @@ public class LinkedList {
         last = node;
     }
 
+    public LinkedListNode getFirstNode(){
+        return first;
+    }
+
     public int getFirst(){
         if (first ==null){
             throw new NoSuchElementException();
